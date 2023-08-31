@@ -301,3 +301,7 @@ button:hover, .btn:hover, #fileInput:hover {
     top:2vh;
     position: relative;
 }
+
+.comma {
+    visibility: hidden;
+}

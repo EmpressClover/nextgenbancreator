@@ -154,3 +154,12 @@ let list;
 
 
 
+  $("#plaintext").click(function(){
+    var divContent = $('.characters2').text();
+      var wi = window.open();
+    $(wi.document.body).html(divContent);
+    $(wi.document.body).css;
+});
+
+
+
