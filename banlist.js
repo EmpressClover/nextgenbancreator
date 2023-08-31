@@ -18,6 +18,24 @@ function takescreenshot() {
       });
 
 
+      function takescreenshot2() {
+        
+        html2canvas(document.querySelector("#root3")).then(canvas => {
+            window.open().    document.body.appendChild(canvas);
+        });
+        
+        }
+    
+        $(".caption-style-1").on('click', 'li', function(){
+            $(".caption-style-2").append($(this).append());
+          });
+    
+    
+          $(".caption-style-2").on('click', 'li', function(){
+            $(".caption-style-1").append($(this).append());
+          });
+
+
 
   function get_random_color() {
     var letters = '0123456789ABCDEF'.split('');
