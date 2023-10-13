@@ -27,7 +27,7 @@
 
                     <P class="info">Discord: empressclover<br>
 <a href="https://discord.gg/EBFcE7qb2f">Clan Discord</a> <br> 
-                        Last Updated: August 31, 2023
+                        Last Updated: October 12th, 2023
                         <br><br>
                         <p class="info3 ">
                             <a href="tutorial.html" target="_blank">How to use the Ban Creator</a><br><br>
@@ -3870,7 +3870,14 @@
     
 
                 </div>
-                <br><br>
+                <br><br><br><br><br>
+
+
+                <p class="opencount">Total Characters Open:<p id="output"></p></p>
+                
+                <p class="root2" id="update">Update Total Characters Open Count</p>
+
+
     <div class="center">
         <input type="file" id="fileInput" class="root2">
     <button onclick="takescreenshot()" class="root2">Open Free Characters Image</button>
@@ -3881,6 +3888,9 @@
     
     <br><br>    <br><br>    <br><br>
     <br><br>    <br><br>    <br><br>
+
+    <p class="bancount">Total Characters Banned:<p id="output2"></p></p>
+    <p class="root2" id="update2">Update Total Characters Open Count</p>
 
     <input class="searchint2" type="text" placeholder="Search for Banned Character">
 
@@ -3974,7 +3984,27 @@ $("#downloadInput").click(function(){
       document.body.removeChild(element);
     });
 
-  
+    var count = $('.caption-style-1 > li').size();
+        document.getElementById('output').innerHTML = count;
+
+$(function(){
+    $('#update').click(function(){
+        var count = $('.caption-style-1 > li').size();
+        document.getElementById('output').innerHTML = count;
+    });
+});
+
+
+var count = $('.caption-style-2 > li').size();
+        document.getElementById('output2').innerHTML = count;
+
+$(function(){
+    $('#update2').click(function(){
+        var count = $('.caption-style-2 > li').size();
+        document.getElementById('output2').innerHTML = count;
+    });
+});
+
 
     </script>
 

@@ -305,3 +305,41 @@ button:hover, .btn:hover, #fileInput:hover {
 .comma {
     visibility: hidden;
 }
+
+
+.opencount, #output, .bancount, #output2 {
+    font-family: 'OS Reg', sans-serif;
+    margin: 0px;
+}
+
+.bancount {
+    margin-top: -106px;
+}
+
+#update {
+    position: relative;
+    font-family: 'OS Reg', sans-serif;
+    font-size: 15px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+#update2 {
+    position: relative;
+    font-family: 'OS Reg', sans-serif;
+    font-size: 15px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#update:hover, #update2:hover {
+    background-color: #cccccc21;
+}
