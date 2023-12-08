@@ -21,23 +21,6 @@
         reader.readAsText(this.files[0]);
       };
     });
-  
-    $("#downloadInput").click(function(){
-      var element = document.createElement('a');
-      filecontents = $('#superroot').html();
-      // do scrubbing here
-      //
-  
-      element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(filecontents));
-      element.setAttribute('download', 'output.html');
-  
-      element.style.display = 'none';
-      document.body.appendChild(element);
-  
-      element.click();
-  
-      document.body.removeChild(element);
-    });
   });
   
 
